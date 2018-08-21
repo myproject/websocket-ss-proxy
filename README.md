@@ -1,1 +1,1 @@
-# a simple demo
+# a simple openshift demo
