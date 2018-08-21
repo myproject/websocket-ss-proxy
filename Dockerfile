@@ -10,10 +10,10 @@ RUN set -ex \
     && apk del curl \
     && rm -rf /var/cache/apk
 
-CMD pip install honcho
-CMD pip install numpy
-CMD pip install shadowsocks
-CMD pip install websockify
+# CMD pip install honcho
+# CMD pip install numpy
+# CMD pip install shadowsocks
+# CMD pip install websockify
 
 ADD entrypoint.sh /entrypoint.sh
 ADD webdir/index.html /webdir/index.html
