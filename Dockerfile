@@ -6,8 +6,7 @@ ENV METHOD aes-256-cfb
 RUN mkdir -m 777 /webdir
 
 RUN set -ex \
-    && apk --update add --no-cache python libsodium rng-tools curl \
-    && apk del curl \
+    && apk --update add --no-cache python=3.6.2 honcho numpy shadowsocks websockify libsodium rng-tools \
     && rm -rf /var/cache/apk
 
 # CMD pip install honcho
